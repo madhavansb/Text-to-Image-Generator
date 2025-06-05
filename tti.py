@@ -19,3 +19,8 @@ image=pipe(prompt).images[0]
 print("prompt : ", prompt)
 plt.imshow(image)
 plt.axis('off')
+
+filename = "generated_image.png"
+image.save(filename)
+
+files.download(filename)
