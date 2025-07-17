@@ -6,8 +6,8 @@ import matplotlib.pyplot as plt
 
 !pip show torch
 # These models are from HUgging face Hub models
-model1="dreamlike-art/dreamlike-diffusion-1.0" 
-model2="stabilityai/stable-diffusion-xl-base-1.0"
+model1="dreamlike-art/dreamlike-diffusion-1.0" # These is like real Image 
+model2="stabilityai/stable-diffusion-xl-base-1.0" # This is like an animation Image
 
 pipe=StableDiffusionPipeline.from_pretrained(model1,torch_dtype=torch.float16,use_safetensors=True)
 pipe.to("cuda")
