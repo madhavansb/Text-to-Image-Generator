@@ -5,8 +5,8 @@ import torch
 import matplotlib.pyplot as plt
 
 !pip show torch
-
-model1="dreamlike-art/dreamlike-diffusion-1.0"
+# These models are from HUgging face Hub models
+model1="dreamlike-art/dreamlike-diffusion-1.0" 
 model2="stabilityai/stable-diffusion-xl-base-1.0"
 
 pipe=StableDiffusionPipeline.from_pretrained(model1,torch_dtype=torch.float16,use_safetensors=True)
